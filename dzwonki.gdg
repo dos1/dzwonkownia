@@ -1,0 +1,2240 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project firstLayout="">
+    <gdVersion build="96" major="4" minor="0" revision="173" />
+    <properties folderProject="false" linuxExecutableFilename="" macExecutableFilename="" packageName="com.example.gamename" projectFile="/Volumes/El Karambola/biurko/poznan game jam/dzwonki.gdg" useExternalSourceFiles="false" winExecutableFilename="" winExecutableIconFile="">
+        <name>Projekt</name>
+        <author></author>
+        <windowWidth>1920</windowWidth>
+        <windowHeight>1080</windowHeight>
+        <latestCompilationDirectory></latestCompilationDirectory>
+        <maxFPS>60</maxFPS>
+        <minFPS>10</minFPS>
+        <verticalSync>false</verticalSync>
+        <extensions>
+            <extension name="BuiltinObject" />
+            <extension name="BuiltinAudio" />
+            <extension name="BuiltinVariables" />
+            <extension name="BuiltinTime" />
+            <extension name="BuiltinMouse" />
+            <extension name="BuiltinKeyboard" />
+            <extension name="BuiltinJoystick" />
+            <extension name="BuiltinCamera" />
+            <extension name="BuiltinWindow" />
+            <extension name="BuiltinFile" />
+            <extension name="BuiltinNetwork" />
+            <extension name="BuiltinScene" />
+            <extension name="BuiltinAdvanced" />
+            <extension name="Sprite" />
+            <extension name="BuiltinCommonInstructions" />
+            <extension name="BuiltinCommonConversions" />
+            <extension name="BuiltinStringInstructions" />
+            <extension name="BuiltinMathematicalTools" />
+            <extension name="BuiltinExternalLayouts" />
+        </extensions>
+        <platforms>
+            <platform name="GDevelop JS platform" />
+        </platforms>
+        <currentPlatform>GDevelop JS platform</currentPlatform>
+    </properties>
+    <resources>
+        <resources>
+            <resource alwaysLoaded="false" file="assets/telefon01.png" kind="image" name="telefon01.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="assets/telefon02.png" kind="image" name="telefon02.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="assets/telefon03.png" kind="image" name="telefon03.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="assets/telefon04.png" kind="image" name="telefon04.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="assets/telefon05.png" kind="image" name="telefon05.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="assets/telefon06.png" kind="image" name="telefon06.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="assets/telefon07.png" kind="image" name="telefon07.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="assets/telefon08.png" kind="image" name="telefon08.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="assets/wiazka.png" kind="image" name="wiazka.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="assets/tlo.png" kind="image" name="tlo.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="assets/punkt.png" kind="image" name="punkt.png" smoothed="true" userAdded="false" />
+            <resource alwaysLoaded="false" file="assets/punkt0.png" kind="image" name="punkt0.png" smoothed="true" userAdded="false" />
+        </resources>
+        <resourceFolders />
+    </resources>
+    <objects />
+    <objectsGroups />
+    <variables />
+    <layouts>
+        <layout b="254" disableInputWhenNotFocused="true" mangledName="Dzwonkownia" name="Dzwonkownia" oglFOV="90.000000" oglZFar="500.000000" oglZNear="1.000000" r="240" standardSortMethod="false" stopSoundsOnStartup="true" title="Dzwonkownia" v="242">
+            <uiSettings grid="false" gridB="255" gridG="180" gridHeight="32" gridOffsetX="0" gridOffsetY="0" gridR="158" gridWidth="32" snap="true" windowMask="false" zoomFactor="0.250000" />
+            <objectsGroups />
+            <variables>
+                <variable name="telefon1x" value="0" />
+            </variables>
+            <instances>
+                <instance angle="0.000000" customSize="true" height="225.000031" layer="" locked="false" name="telefon1" width="439.083618" x="312.000061" y="179.999939" zOrder="10">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="303.000000" layer="" locked="false" name="telefon2" width="389.044617" x="473.999969" y="526.000000" zOrder="10">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="254.000000" layer="" locked="false" name="telefon3" width="180.528931" x="1108.000000" y="561.999878" zOrder="10">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="wiazka1" width="0.000000" x="281.999939" y="506.000031" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="261.000031" layer="" locked="false" name="telefon4" width="244.408340" x="1072.000000" y="187.999939" zOrder="10">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="249.000000" layer="" locked="false" name="telefon5" width="221.603912" x="166.000031" y="626.000000" zOrder="10">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="263.000031" layer="" locked="false" name="telefon6" width="211.842911" x="750.000000" y="438.000061" zOrder="10">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="207.000000" layer="" locked="false" name="telefon7" width="260.399994" x="856.000061" y="674.000000" zOrder="10">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="216.000000" layer="" locked="false" name="telefon8" width="383.294128" x="735.999878" y="178.000031" zOrder="10">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="wiazka2" width="0.000000" x="224.999924" y="404.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="wiazka3" width="0.000000" x="462.999939" y="384.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="wiazka4" width="0.000000" x="404.999908" y="318.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="wiazka5" width="0.000000" x="386.999939" y="402.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="wiazka6" width="0.000000" x="276.999908" y="312.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="wiazka7" width="0.000000" x="297.000031" y="492.000031" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="false" height="0.000000" layer="" locked="false" name="wiazka8" width="0.000000" x="464.999969" y="452.000000" zOrder="5">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="1091.000000" layer="" locked="false" name="tlo" width="2126.646484" x="-50.000031" y="-3.000061" zOrder="0">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="176.999878" layer="" locked="false" name="punkt1" width="185.375259" x="380.000183" y="1154.000122" zOrder="20">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+                <instance angle="0.000000" customSize="true" height="177.000000" layer="" locked="false" name="punkt2" width="185.375000" x="902.000000" y="1229.000000" zOrder="21">
+                    <numberProperties />
+                    <stringProperties />
+                    <initialVariables />
+                </instance>
+            </instances>
+            <objects>
+                <object name="telefon1" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="true" image="telefon01.png">
+                                            <points />
+                                            <originPoint name="origine" x="362.000000" y="185.000000" />
+                                            <centerPoint automatic="true" name="centre" x="362.000000" y="185.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="1.000000" y="97.000000" />
+                                                    <vertice x="170.000000" y="31.000000" />
+                                                    <vertice x="624.000000" y="0.000000" />
+                                                    <vertice x="715.000000" y="54.000000" />
+                                                    <vertice x="719.500000" y="87.000000" />
+                                                    <vertice x="724.000000" y="120.000000" />
+                                                    <vertice x="702.000000" y="237.000000" />
+                                                    <vertice x="475.000000" y="354.000000" />
+                                                    <vertice x="398.000000" y="371.000000" />
+                                                    <vertice x="62.000000" y="285.000000" />
+                                                    <vertice x="0.000000" y="195.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="telefon2" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="telefon02.png">
+                                            <points />
+                                            <originPoint name="origine" x="316.000000" y="246.000000" />
+                                            <centerPoint automatic="true" name="centre" x="316.500000" y="246.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="633.000000" y="0.000000" />
+                                                    <vertice x="633.000000" y="493.000000" />
+                                                    <vertice x="0.000000" y="493.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="telefon3" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="telefon03.png">
+                                            <points />
+                                            <originPoint name="origine" x="172.000000" y="242.000000" />
+                                            <centerPoint automatic="true" name="centre" x="172.000000" y="242.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="344.000000" y="0.000000" />
+                                                    <vertice x="344.000000" y="484.000000" />
+                                                    <vertice x="0.000000" y="484.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="wiazka1" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="true" image="wiazka.png">
+                                            <points />
+                                            <originPoint name="origine" x="500.000000" y="32.000000" />
+                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="503.000000" y="0.000000" />
+                                                    <vertice x="502.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="telefon4" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="telefon04.png">
+                                            <points />
+                                            <originPoint name="origine" x="191.000000" y="204.000000" />
+                                            <centerPoint automatic="true" name="centre" x="191.500000" y="204.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="383.000000" y="0.000000" />
+                                                    <vertice x="383.000000" y="409.000000" />
+                                                    <vertice x="0.000000" y="409.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="telefon5" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="telefon05.png">
+                                            <points />
+                                            <originPoint name="origine" x="182.000000" y="204.000000" />
+                                            <centerPoint automatic="true" name="centre" x="182.000000" y="204.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="364.000000" y="0.000000" />
+                                                    <vertice x="364.000000" y="409.000000" />
+                                                    <vertice x="0.000000" y="409.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="telefon6" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="telefon06.png">
+                                            <points />
+                                            <originPoint name="origine" x="161.000000" y="200.000000" />
+                                            <centerPoint automatic="true" name="centre" x="161.500000" y="200.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="323.000000" y="0.000000" />
+                                                    <vertice x="323.000000" y="401.000000" />
+                                                    <vertice x="0.000000" y="401.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="telefon7" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="telefon07.png">
+                                            <points />
+                                            <originPoint name="origine" x="217.000000" y="172.000000" />
+                                            <centerPoint automatic="true" name="centre" x="217.000000" y="172.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="434.000000" y="0.000000" />
+                                                    <vertice x="434.000000" y="345.000000" />
+                                                    <vertice x="0.000000" y="345.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="telefon8" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="telefon08.png">
+                                            <points />
+                                            <originPoint name="origine" x="271.000000" y="153.000000" />
+                                            <centerPoint automatic="true" name="centre" x="271.500000" y="153.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="543.000000" y="0.000000" />
+                                                    <vertice x="543.000000" y="306.000000" />
+                                                    <vertice x="0.000000" y="306.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="wiazka2" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="true" image="wiazka.png">
+                                            <points />
+                                            <originPoint name="origine" x="500.000000" y="32.000000" />
+                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="500.000000" y="0.000000" />
+                                                    <vertice x="500.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="wiazka3" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="true" image="wiazka.png">
+                                            <points />
+                                            <originPoint name="origine" x="500.000000" y="32.000000" />
+                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="500.000000" y="0.000000" />
+                                                    <vertice x="500.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="wiazka4" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="true" image="wiazka.png">
+                                            <points />
+                                            <originPoint name="origine" x="500.000000" y="32.000000" />
+                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="500.000000" y="0.000000" />
+                                                    <vertice x="500.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="wiazka5" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="true" image="wiazka.png">
+                                            <points />
+                                            <originPoint name="origine" x="500.000000" y="32.000000" />
+                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="500.000000" y="0.000000" />
+                                                    <vertice x="500.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="wiazka6" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="true" image="wiazka.png">
+                                            <points />
+                                            <originPoint name="origine" x="500.000000" y="32.000000" />
+                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="500.000000" y="0.000000" />
+                                                    <vertice x="500.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="wiazka7" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="true" image="wiazka.png">
+                                            <points />
+                                            <originPoint name="origine" x="500.000000" y="32.000000" />
+                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="500.000000" y="0.000000" />
+                                                    <vertice x="500.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="wiazka8" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="true" image="wiazka.png">
+                                            <points />
+                                            <originPoint name="origine" x="500.000000" y="32.000000" />
+                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="500.000000" y="0.000000" />
+                                                    <vertice x="500.000000" y="64.000000" />
+                                                    <vertice x="0.000000" y="64.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="tlo" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="tlo.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="595.500000" y="305.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="1191.000000" y="0.000000" />
+                                                    <vertice x="1191.000000" y="611.000000" />
+                                                    <vertice x="0.000000" y="611.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="punkt1" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="punkt.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="166.000000" y="158.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="332.000000" y="0.000000" />
+                                                    <vertice x="332.000000" y="317.000000" />
+                                                    <vertice x="0.000000" y="317.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="punkt0.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="166.000000" y="158.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="332.000000" y="0.000000" />
+                                                    <vertice x="332.000000" y="317.000000" />
+                                                    <vertice x="0.000000" y="317.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+                <object name="punkt2" type="Sprite" updateIfNotVisible="false">
+                    <variables />
+                    <behaviors />
+                    <animations>
+                        <animation name="" useMultipleDirections="false">
+                            <directions>
+                                <direction looping="false" timeBetweenFrames="1.000000">
+                                    <sprites>
+                                        <sprite hasCustomCollisionMask="false" image="punkt.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="166.000000" y="158.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="332.000000" y="0.000000" />
+                                                    <vertice x="332.000000" y="317.000000" />
+                                                    <vertice x="0.000000" y="317.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                        <sprite hasCustomCollisionMask="false" image="punkt0.png">
+                                            <points />
+                                            <originPoint name="origine" x="0.000000" y="0.000000" />
+                                            <centerPoint automatic="true" name="centre" x="166.000000" y="158.500000" />
+                                            <customCollisionMask>
+                                                <polygon>
+                                                    <vertice x="0.000000" y="0.000000" />
+                                                    <vertice x="332.000000" y="0.000000" />
+                                                    <vertice x="332.000000" y="317.000000" />
+                                                    <vertice x="0.000000" y="317.000000" />
+                                                </polygon>
+                                            </customCollisionMask>
+                                        </sprite>
+                                    </sprites>
+                                </direction>
+                            </directions>
+                        </animation>
+                    </animations>
+                </object>
+            </objects>
+            <events>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Comment</type>
+                    <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
+                    <comment>Poczatek</comment>
+                    <comment2></comment2>
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <instruction>
+                            <type inverted="false" value="DepartScene" />
+                            <parameters>
+                                <parameter></parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                    </conditions>
+                    <actions>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>telefon1</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>telefon2</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>telefon3</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>telefon4</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>telefon5</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>telefon6</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>telefon7</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>telefon8</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>wiazka1</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>wiazka2</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>wiazka3</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>wiazka4</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>wiazka5</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>wiazka6</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>wiazka7</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                        <instruction>
+                            <type inverted="false" value="Cache" />
+                            <parameters>
+                                <parameter>wiazka8</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                    </actions>
+                    <events />
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Comment</type>
+                    <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
+                    <comment>Dolaczanie graczy do gry</comment>
+                    <comment2></comment2>
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <instruction>
+                            <type inverted="false" value="VarScene" />
+                            <parameters>
+                                <parameter>gra</parameter>
+                                <parameter>=</parameter>
+                                <parameter>0</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                    </conditions>
+                    <actions />
+                    <events>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="VarScene" />
+                                    <parameters>
+                                        <parameter>gracz1</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>0</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="BuiltinCommonInstructions::Or" />
+                                    <parameters />
+                                    <subInstructions>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>Num1</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>Num2</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>Num3</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>Num4</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </subInstructions>
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>telefon1</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>wiazka1</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="ModVarScene" />
+                                    <parameters>
+                                        <parameter>gracz1</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>1</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="VarScene" />
+                                    <parameters>
+                                        <parameter>gracz2</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>0</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="BuiltinCommonInstructions::Or" />
+                                    <parameters />
+                                    <subInstructions>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>Num5</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>Num6</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>Num7</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>Num8</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </subInstructions>
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>telefon2</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>wiazka2</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="ModVarScene" />
+                                    <parameters>
+                                        <parameter>gracz2</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>1</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="VarScene" />
+                                    <parameters>
+                                        <parameter>gracz3</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>0</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="BuiltinCommonInstructions::Or" />
+                                    <parameters />
+                                    <subInstructions>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>q</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>w</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>e</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>r</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </subInstructions>
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>wiazka3</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>telefon3</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="ModVarScene" />
+                                    <parameters>
+                                        <parameter>gracz3</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>1</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="VarScene" />
+                                    <parameters>
+                                        <parameter>gracz4</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>0</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="BuiltinCommonInstructions::Or" />
+                                    <parameters />
+                                    <subInstructions>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>t</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>y</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>u</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>i</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </subInstructions>
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>wiazka4</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>telefon4</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="ModVarScene" />
+                                    <parameters>
+                                        <parameter>gracz4</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>1</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="VarScene" />
+                                    <parameters>
+                                        <parameter>gracz5</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>0</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="BuiltinCommonInstructions::Or" />
+                                    <parameters />
+                                    <subInstructions>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>a</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>s</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>d</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>f</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </subInstructions>
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>wiazka5</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>telefon5</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="ModVarScene" />
+                                    <parameters>
+                                        <parameter>gracz5</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>1</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="VarScene" />
+                                    <parameters>
+                                        <parameter>gracz6</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>0</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="BuiltinCommonInstructions::Or" />
+                                    <parameters />
+                                    <subInstructions>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>g</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>h</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>j</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>k</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </subInstructions>
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>wiazka6</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>telefon6</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="ModVarScene" />
+                                    <parameters>
+                                        <parameter>gracz6</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>1</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="VarScene" />
+                                    <parameters>
+                                        <parameter>gracz7</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>0</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="BuiltinCommonInstructions::Or" />
+                                    <parameters />
+                                    <subInstructions>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>z</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>x</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>c</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>v</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </subInstructions>
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>wiazka7</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>telefon7</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="ModVarScene" />
+                                    <parameters>
+                                        <parameter>gracz7</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>1</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="VarScene" />
+                                    <parameters>
+                                        <parameter>gracz8</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>0</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="BuiltinCommonInstructions::Or" />
+                                    <parameters />
+                                    <subInstructions>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>b</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>n</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>m</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>l</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </subInstructions>
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>wiazka8</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="Montre" />
+                                    <parameters>
+                                        <parameter>telefon8</parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="ModVarScene" />
+                                    <parameters>
+                                        <parameter>gracz8</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>1</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Space</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="ModVarScene" />
+                                    <parameters>
+                                        <parameter>gra</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>1</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                    </events>
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Comment</type>
+                    <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
+                    <comment>Przyczepianie wiazki do telefonu</comment>
+                    <comment2></comment2>
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <instruction>
+                            <type inverted="false" value="VarScene" />
+                            <parameters>
+                                <parameter>gra</parameter>
+                                <parameter>&gt;=</parameter>
+                                <parameter>0</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                    </conditions>
+                    <actions />
+                    <events>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions />
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>wiazka1</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon1.X()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>wiazka1</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon1.Y()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>wiazka1</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon1.Angle()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions />
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>wiazka2</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon2.X()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>wiazka2</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon2.Y()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>wiazka2</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon2.Angle()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions />
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>wiazka3</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon3.X()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>wiazka3</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon3.Y()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>wiazka3</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon3.Angle()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions />
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>wiazka4</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon4.X()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>wiazka4</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon4.Y()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>wiazka4</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon4.Angle()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions />
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>wiazka5</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon5.X()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>wiazka5</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon5.Y()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>wiazka5</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon5.Angle()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions />
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>wiazka6</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon6.X()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>wiazka6</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon6.Y()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>wiazka6</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon6.Angle()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions />
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>wiazka7</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon7.X()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>wiazka7</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon7.Y()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>wiazka7</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon7.Angle()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions />
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>wiazka8</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon8.X()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>wiazka8</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon8.Y()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>wiazka8</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon8.Angle()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                    </events>
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Comment</type>
+                    <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
+                    <comment>Gra</comment>
+                    <comment2></comment2>
+                </event>
+                <event disabled="false" folded="false">
+                    <type>BuiltinCommonInstructions::Standard</type>
+                    <conditions>
+                        <instruction>
+                            <type inverted="false" value="VarScene" />
+                            <parameters>
+                                <parameter>gra</parameter>
+                                <parameter>=</parameter>
+                                <parameter>1</parameter>
+                            </parameters>
+                            <subInstructions />
+                        </instruction>
+                    </conditions>
+                    <actions />
+                    <events>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Comment</type>
+                            <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
+                            <comment>Poruszanie gracz 1&#x0A;</comment>
+                            <comment2></comment2>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Num1</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon1</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon1.X()-cos(telefon1.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon1</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon1.Y()-sin(telefon1.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Num2</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon1</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon1.X()+cos(telefon1.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon1</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon1.Y()+sin(telefon1.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Num3</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon1</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon1.Angle()-400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Num4</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon1</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon1.Angle()+400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Comment</type>
+                            <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
+                            <comment>Poruszanie gracz 2&#x0A;</comment>
+                            <comment2></comment2>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Num5</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon2</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon2.X()+cos(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon2</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon2.Y()+sin(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Num6</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon2</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon2.X()-cos(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon2</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon2.Y()-sin(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Num7</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon2</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon2.Angle()-400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Num8</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon2</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon2.Angle()+400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Comment</type>
+                            <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
+                            <comment>Kolizja wiazki&#x0A;</comment>
+                            <comment2></comment2>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="CollisionNP" />
+                                    <parameters>
+                                        <parameter>wiazka1</parameter>
+                                        <parameter>wiazka2</parameter>
+                                        <parameter></parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="BuiltinCommonInstructions::Once" />
+                                    <parameters />
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions />
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions />
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="Montre" />
+                                            <parameters>
+                                                <parameter>punkt1</parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreAutour" />
+                                            <parameters>
+                                                <parameter>punkt1</parameter>
+                                                <parameter>telefon1</parameter>
+                                                <parameter>0</parameter>
+                                                <parameter>0</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="ChangeSprite" />
+                                            <parameters>
+                                                <parameter>punkt1</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>0</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions />
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="ChangeSprite" />
+                                            <parameters>
+                                                <parameter>punkt2</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>0</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="Montre" />
+                                            <parameters>
+                                                <parameter>punkt2</parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreAutour" />
+                                            <parameters>
+                                                <parameter>punkt2</parameter>
+                                                <parameter>telefon2</parameter>
+                                                <parameter>0</parameter>
+                                                <parameter>0</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Comment</type>
+                            <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
+                            <comment>Kolizja telefonu&#x0A;</comment>
+                            <comment2></comment2>
+                        </event>
+                        <event disabled="true" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="CollisionNP" />
+                                    <parameters>
+                                        <parameter>telefon1</parameter>
+                                        <parameter>telefon2</parameter>
+                                        <parameter></parameter>
+                                        <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions />
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions />
+                            <actions />
+                            <events />
+                        </event>
+                    </events>
+                </event>
+            </events>
+            <layers>
+                <layer name="" visibility="true">
+                    <cameras>
+                        <camera defaultSize="true" defaultViewport="true" height="0.000000" viewportBottom="1.000000" viewportLeft="0.000000" viewportRight="1.000000" viewportTop="0.000000" width="0.000000" />
+                    </cameras>
+                    <effects />
+                </layer>
+            </layers>
+            <behaviorsSharedData />
+        </layout>
+    </layouts>
+    <externalEvents />
+    <externalLayouts />
+    <externalSourceFiles />
+</project>
