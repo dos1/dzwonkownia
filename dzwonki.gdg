@@ -4,8 +4,8 @@
     <properties folderProject="false" linuxExecutableFilename="" macExecutableFilename="" packageName="com.example.gamename" projectFile="/home/dos/git/dzwonkownia/dzwonki.gdg" useExternalSourceFiles="false" winExecutableFilename="" winExecutableIconFile="">
         <name>Projekt</name>
         <author></author>
-        <windowWidth>1920</windowWidth>
-        <windowHeight>1080</windowHeight>
+        <windowWidth>2400</windowWidth>
+        <windowHeight>1350</windowHeight>
         <latestCompilationDirectory></latestCompilationDirectory>
         <maxFPS>60</maxFPS>
         <minFPS>10</minFPS>
@@ -144,17 +144,17 @@
                     <stringProperties />
                     <initialVariables />
                 </instance>
-                <instance angle="0.000000" customSize="true" height="1091.000000" layer="" locked="false" name="tlo" width="2126.646484" x="-50.000031" y="-3.000061" zOrder="0">
+                <instance angle="0.000000" customSize="true" height="1350.000000" layer="" locked="false" name="tlo" width="2400.000000" x="0.000000" y="0.000000" zOrder="0">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
                 </instance>
-                <instance angle="0.000000" customSize="true" height="176.999878" layer="" locked="false" name="punkt1" width="185.375259" x="380.000183" y="1154.000122" zOrder="20">
+                <instance angle="0.000000" customSize="true" height="176.999878" layer="" locked="false" name="punkt1" width="185.375259" x="404.000061" y="1405.999878" zOrder="20">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
                 </instance>
-                <instance angle="0.000000" customSize="true" height="177.000000" layer="" locked="false" name="punkt2" width="185.375000" x="902.000000" y="1229.000000" zOrder="21">
+                <instance angle="0.000000" customSize="true" height="177.000000" layer="" locked="false" name="punkt2" width="185.375000" x="914.000000" y="1457.000000" zOrder="21">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
@@ -2176,6 +2176,36 @@
                         </event>
                         <event disabled="false" folded="false">
                             <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions />
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="Opacity" />
+                                    <parameters>
+                                        <parameter>wiazka2</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>255</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="Opacity" />
+                                    <parameters>
+                                        <parameter>wiazka1</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>255</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::JsCode</type>
+                            <inlineCode>console.log(Math.abs(Math.abs(runtimeScene._instances.items.wiazka1[0].getAngle()%180) - Math.abs(runtimeScene._instances.items.wiazka2[0].getAngle()%180))%180)</inlineCode>
+                            <parameterObjects></parameterObjects>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
                             <conditions>
                                 <instruction>
                                     <type inverted="false" value="CollisionNP" />
@@ -2188,48 +2218,74 @@
                                     <subInstructions />
                                 </instruction>
                                 <instruction>
-                                    <type inverted="false" value="Egal" />
+                                    <type inverted="false" value="VarScene" />
                                     <parameters>
-                                        <parameter>abs((wiazka1.Angle()%180)-(wiazka2.Angle()%180))</parameter>
-                                        <parameter>&lt;</parameter>
-                                        <parameter>10</parameter>
+                                        <parameter>wiazka12</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>0</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
                                 <instruction>
-                                    <type inverted="false" value="BuiltinCommonInstructions::Once" />
+                                    <type inverted="false" value="BuiltinCommonInstructions::Or" />
                                     <parameters />
-                                    <subInstructions />
+                                    <subInstructions>
+                                        <instruction>
+                                            <type inverted="false" value="Egal" />
+                                            <parameters>
+                                                <parameter>abs(abs(wiazka1.Angle()%180)-abs(wiazka2.Angle()%180))</parameter>
+                                                <parameter>&lt;=</parameter>
+                                                <parameter>16</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </subInstructions>
                                 </instruction>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="ModVarScene" />
+                                    <parameters>
+                                        <parameter>wiazka12timer</parameter>
+                                        <parameter>+</parameter>
+                                        <parameter>TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="Opacity" />
+                                    <parameters>
+                                        <parameter>wiazka1</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>128</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="Opacity" />
+                                    <parameters>
+                                        <parameter>wiazka2</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>128</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
                             <events>
                                 <event disabled="false" folded="false">
                                     <type>BuiltinCommonInstructions::Standard</type>
-                                    <conditions />
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="BuiltinCommonInstructions::Once" />
+                                            <parameters />
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
                                     <actions>
                                         <instruction>
-                                            <type inverted="false" value="Montre" />
+                                            <type inverted="false" value="ModVarScene" />
                                             <parameters>
-                                                <parameter>punkt1</parameter>
-                                                <parameter></parameter>
-                                            </parameters>
-                                            <subInstructions />
-                                        </instruction>
-                                        <instruction>
-                                            <type inverted="false" value="MettreAutour" />
-                                            <parameters>
-                                                <parameter>punkt1</parameter>
-                                                <parameter>telefon1</parameter>
-                                                <parameter>0</parameter>
-                                                <parameter>0</parameter>
-                                            </parameters>
-                                            <subInstructions />
-                                        </instruction>
-                                        <instruction>
-                                            <type inverted="false" value="ChangeSprite" />
-                                            <parameters>
-                                                <parameter>punkt1</parameter>
+                                                <parameter>wiazka12timer</parameter>
                                                 <parameter>=</parameter>
                                                 <parameter>0</parameter>
                                             </parameters>
@@ -2240,37 +2296,103 @@
                                 </event>
                                 <event disabled="false" folded="false">
                                     <type>BuiltinCommonInstructions::Standard</type>
-                                    <conditions />
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="VarScene" />
+                                            <parameters>
+                                                <parameter>wiazka12timer</parameter>
+                                                <parameter>&gt;=</parameter>
+                                                <parameter>5</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="BuiltinCommonInstructions::Once" />
+                                            <parameters />
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
                                     <actions>
                                         <instruction>
-                                            <type inverted="false" value="ChangeSprite" />
+                                            <type inverted="false" value="ModVarScene" />
                                             <parameters>
-                                                <parameter>punkt2</parameter>
+                                                <parameter>wiazka12</parameter>
                                                 <parameter>=</parameter>
-                                                <parameter>0</parameter>
-                                            </parameters>
-                                            <subInstructions />
-                                        </instruction>
-                                        <instruction>
-                                            <type inverted="false" value="Montre" />
-                                            <parameters>
-                                                <parameter>punkt2</parameter>
-                                                <parameter></parameter>
-                                            </parameters>
-                                            <subInstructions />
-                                        </instruction>
-                                        <instruction>
-                                            <type inverted="false" value="MettreAutour" />
-                                            <parameters>
-                                                <parameter>punkt2</parameter>
-                                                <parameter>telefon2</parameter>
-                                                <parameter>0</parameter>
-                                                <parameter>0</parameter>
+                                                <parameter>1</parameter>
                                             </parameters>
                                             <subInstructions />
                                         </instruction>
                                     </actions>
-                                    <events />
+                                    <events>
+                                        <event disabled="false" folded="false">
+                                            <type>BuiltinCommonInstructions::Standard</type>
+                                            <conditions />
+                                            <actions>
+                                                <instruction>
+                                                    <type inverted="false" value="Montre" />
+                                                    <parameters>
+                                                        <parameter>punkt1</parameter>
+                                                        <parameter></parameter>
+                                                    </parameters>
+                                                    <subInstructions />
+                                                </instruction>
+                                                <instruction>
+                                                    <type inverted="false" value="MettreAutour" />
+                                                    <parameters>
+                                                        <parameter>punkt1</parameter>
+                                                        <parameter>telefon1</parameter>
+                                                        <parameter>0</parameter>
+                                                        <parameter>0</parameter>
+                                                    </parameters>
+                                                    <subInstructions />
+                                                </instruction>
+                                                <instruction>
+                                                    <type inverted="false" value="ChangeSprite" />
+                                                    <parameters>
+                                                        <parameter>punkt1</parameter>
+                                                        <parameter>=</parameter>
+                                                        <parameter>0</parameter>
+                                                    </parameters>
+                                                    <subInstructions />
+                                                </instruction>
+                                            </actions>
+                                            <events />
+                                        </event>
+                                        <event disabled="false" folded="false">
+                                            <type>BuiltinCommonInstructions::Standard</type>
+                                            <conditions />
+                                            <actions>
+                                                <instruction>
+                                                    <type inverted="false" value="ChangeSprite" />
+                                                    <parameters>
+                                                        <parameter>punkt2</parameter>
+                                                        <parameter>=</parameter>
+                                                        <parameter>0</parameter>
+                                                    </parameters>
+                                                    <subInstructions />
+                                                </instruction>
+                                                <instruction>
+                                                    <type inverted="false" value="Montre" />
+                                                    <parameters>
+                                                        <parameter>punkt2</parameter>
+                                                        <parameter></parameter>
+                                                    </parameters>
+                                                    <subInstructions />
+                                                </instruction>
+                                                <instruction>
+                                                    <type inverted="false" value="MettreAutour" />
+                                                    <parameters>
+                                                        <parameter>punkt2</parameter>
+                                                        <parameter>telefon2</parameter>
+                                                        <parameter>0</parameter>
+                                                        <parameter>0</parameter>
+                                                    </parameters>
+                                                    <subInstructions />
+                                                </instruction>
+                                            </actions>
+                                            <events />
+                                        </event>
+                                    </events>
                                 </event>
                             </events>
                         </event>
