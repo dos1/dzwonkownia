@@ -58,23 +58,72 @@
     <variables />
     <layouts>
         <layout b="254" disableInputWhenNotFocused="true" mangledName="Dzwonkownia" name="Dzwonkownia" oglFOV="90.000000" oglZFar="500.000000" oglZNear="1.000000" r="240" standardSortMethod="false" stopSoundsOnStartup="true" title="Dzwonkownia" v="242">
-            <uiSettings grid="false" gridB="255" gridG="180" gridHeight="32" gridOffsetX="0" gridOffsetY="0" gridR="158" gridWidth="32" snap="true" windowMask="false" zoomFactor="0.250000" />
-            <objectsGroups />
+            <uiSettings grid="false" gridB="255" gridG="180" gridHeight="32" gridOffsetX="0" gridOffsetY="0" gridR="158" gridWidth="32" snap="true" windowMask="false" zoomFactor="0.500000" />
+            <objectsGroups>
+                <group name="NowaGrupa2">
+                    <objects>
+                        <object name="telefon1" />
+                        <object name="telefon2" />
+                        <object name="telefon3" />
+                        <object name="telefon4" />
+                        <object name="telefon5" />
+                        <object name="telefon6" />
+                        <object name="telefon7" />
+                        <object name="telefon8" />
+                    </objects>
+                </group>
+                <group name="NowaGrupa">
+                    <objects>
+                        <object name="telefon1" />
+                        <object name="telefon2" />
+                        <object name="telefon3" />
+                        <object name="telefon4" />
+                        <object name="telefon5" />
+                        <object name="telefon6" />
+                        <object name="telefon7" />
+                        <object name="telefon8" />
+                    </objects>
+                </group>
+                <group name="NowaWiazka">
+                    <objects>
+                        <object name="wiazka1" />
+                        <object name="wiazka2" />
+                        <object name="wiazka3" />
+                        <object name="wiazka4" />
+                        <object name="wiazka5" />
+                        <object name="wiazka6" />
+                        <object name="wiazka7" />
+                        <object name="wiazka8" />
+                    </objects>
+                </group>
+                <group name="Wiazka">
+                    <objects>
+                        <object name="wiazka1" />
+                        <object name="wiazka2" />
+                        <object name="wiazka3" />
+                        <object name="wiazka4" />
+                        <object name="wiazka5" />
+                        <object name="wiazka6" />
+                        <object name="wiazka7" />
+                        <object name="wiazka8" />
+                    </objects>
+                </group>
+            </objectsGroups>
             <variables>
                 <variable name="telefon1x" value="0" />
             </variables>
             <instances>
-                <instance angle="0.000000" customSize="true" height="225.000031" layer="" locked="false" name="telefon1" width="439.083618" x="312.000061" y="179.999939" zOrder="10">
+                <instance angle="0.000000" customSize="true" height="225.000031" layer="" locked="false" name="telefon1" width="439.083618" x="1862.000000" y="990.000000" zOrder="10">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
                 </instance>
-                <instance angle="0.000000" customSize="true" height="303.000000" layer="" locked="false" name="telefon2" width="389.044617" x="473.999969" y="526.000000" zOrder="10">
+                <instance angle="0.000000" customSize="true" height="303.000000" layer="" locked="false" name="telefon2" width="389.044617" x="1961.999878" y="296.000000" zOrder="10">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
                 </instance>
-                <instance angle="0.000000" customSize="true" height="254.000000" layer="" locked="false" name="telefon3" width="180.528931" x="1108.000000" y="561.999878" zOrder="10">
+                <instance angle="0.000000" customSize="true" height="254.000000" layer="" locked="false" name="telefon3" width="180.528931" x="391.999939" y="1075.999878" zOrder="10">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
@@ -84,27 +133,27 @@
                     <stringProperties />
                     <initialVariables />
                 </instance>
-                <instance angle="0.000000" customSize="true" height="261.000031" layer="" locked="false" name="telefon4" width="244.408340" x="1072.000000" y="187.999939" zOrder="10">
+                <instance angle="0.000000" customSize="true" height="261.000031" layer="" locked="false" name="telefon4" width="244.408340" x="1496.000122" y="549.999878" zOrder="10">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
                 </instance>
-                <instance angle="0.000000" customSize="true" height="249.000000" layer="" locked="false" name="telefon5" width="221.603912" x="166.000031" y="626.000000" zOrder="10">
+                <instance angle="0.000000" customSize="true" height="249.000000" layer="" locked="false" name="telefon5" width="221.603912" x="324.000000" y="638.000000" zOrder="10">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
                 </instance>
-                <instance angle="0.000000" customSize="true" height="263.000031" layer="" locked="false" name="telefon6" width="211.842911" x="750.000000" y="438.000061" zOrder="10">
+                <instance angle="0.000000" customSize="true" height="263.000031" layer="" locked="false" name="telefon6" width="211.842911" x="1002.000061" y="818.000122" zOrder="10">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
                 </instance>
-                <instance angle="0.000000" customSize="true" height="207.000000" layer="" locked="false" name="telefon7" width="260.399994" x="856.000061" y="674.000000" zOrder="10">
+                <instance angle="0.000000" customSize="true" height="207.000000" layer="" locked="false" name="telefon7" width="260.399994" x="1230.000000" y="1102.000000" zOrder="10">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
                 </instance>
-                <instance angle="0.000000" customSize="true" height="216.000000" layer="" locked="false" name="telefon8" width="383.294128" x="735.999878" y="178.000031" zOrder="10">
+                <instance angle="0.000000" customSize="true" height="216.000000" layer="" locked="false" name="telefon8" width="383.294128" x="747.999939" y="408.000031" zOrder="10">
                     <numberProperties />
                     <stringProperties />
                     <initialVariables />
@@ -963,22 +1012,6 @@
                                             <type inverted="false" value="KeyPressed" />
                                             <parameters>
                                                 <parameter></parameter>
-                                                <parameter>Num5</parameter>
-                                            </parameters>
-                                            <subInstructions />
-                                        </instruction>
-                                        <instruction>
-                                            <type inverted="false" value="KeyPressed" />
-                                            <parameters>
-                                                <parameter></parameter>
-                                                <parameter>Num6</parameter>
-                                            </parameters>
-                                            <subInstructions />
-                                        </instruction>
-                                        <instruction>
-                                            <type inverted="false" value="KeyPressed" />
-                                            <parameters>
-                                                <parameter></parameter>
                                                 <parameter>Num7</parameter>
                                             </parameters>
                                             <subInstructions />
@@ -988,6 +1021,22 @@
                                             <parameters>
                                                 <parameter></parameter>
                                                 <parameter>Num8</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>Num9</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>Num0</parameter>
                                             </parameters>
                                             <subInstructions />
                                         </instruction>
@@ -1123,22 +1172,6 @@
                                             <type inverted="false" value="KeyPressed" />
                                             <parameters>
                                                 <parameter></parameter>
-                                                <parameter>t</parameter>
-                                            </parameters>
-                                            <subInstructions />
-                                        </instruction>
-                                        <instruction>
-                                            <type inverted="false" value="KeyPressed" />
-                                            <parameters>
-                                                <parameter></parameter>
-                                                <parameter>y</parameter>
-                                            </parameters>
-                                            <subInstructions />
-                                        </instruction>
-                                        <instruction>
-                                            <type inverted="false" value="KeyPressed" />
-                                            <parameters>
-                                                <parameter></parameter>
                                                 <parameter>u</parameter>
                                             </parameters>
                                             <subInstructions />
@@ -1148,6 +1181,22 @@
                                             <parameters>
                                                 <parameter></parameter>
                                                 <parameter>i</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>o</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>p</parameter>
                                             </parameters>
                                             <subInstructions />
                                         </instruction>
@@ -1283,14 +1332,6 @@
                                             <type inverted="false" value="KeyPressed" />
                                             <parameters>
                                                 <parameter></parameter>
-                                                <parameter>g</parameter>
-                                            </parameters>
-                                            <subInstructions />
-                                        </instruction>
-                                        <instruction>
-                                            <type inverted="false" value="KeyPressed" />
-                                            <parameters>
-                                                <parameter></parameter>
                                                 <parameter>h</parameter>
                                             </parameters>
                                             <subInstructions />
@@ -1308,6 +1349,14 @@
                                             <parameters>
                                                 <parameter></parameter>
                                                 <parameter>k</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="KeyPressed" />
+                                            <parameters>
+                                                <parameter></parameter>
+                                                <parameter>l</parameter>
                                             </parameters>
                                             <subInstructions />
                                         </instruction>
@@ -1467,7 +1516,7 @@
                                             <type inverted="false" value="KeyPressed" />
                                             <parameters>
                                                 <parameter></parameter>
-                                                <parameter>l</parameter>
+                                                <parameter>,</parameter>
                                             </parameters>
                                             <subInstructions />
                                         </instruction>
@@ -1892,7 +1941,7 @@
                                             <type inverted="false" value="Collision" />
                                             <parameters>
                                                 <parameter>telefon1</parameter>
-                                                <parameter>telefon2</parameter>
+                                                <parameter>NowaGrupa</parameter>
                                                 <parameter></parameter>
                                                 <parameter></parameter>
                                             </parameters>
@@ -1903,18 +1952,18 @@
                                         <instruction>
                                             <type inverted="false" value="MettreY" />
                                             <parameters>
-                                                <parameter>telefon2</parameter>
+                                                <parameter>NowaGrupa</parameter>
                                                 <parameter>=</parameter>
-                                                <parameter>telefon2.Y()-sin(telefon1.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                                <parameter>NowaGrupa.Y()-sin(telefon1.Angle()/180*3.1415)*400*TimeDelta()</parameter>
                                             </parameters>
                                             <subInstructions />
                                         </instruction>
                                         <instruction>
                                             <type inverted="false" value="MettreX" />
                                             <parameters>
-                                                <parameter>telefon2</parameter>
+                                                <parameter>NowaGrupa</parameter>
                                                 <parameter>=</parameter>
-                                                <parameter>telefon2.X()-cos(telefon1.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                                <parameter>NowaGrupa.X()-cos(telefon1.Angle()/180*3.1415)*400*TimeDelta()</parameter>
                                             </parameters>
                                             <subInstructions />
                                         </instruction>
@@ -2020,7 +2069,7 @@
                                     <type inverted="false" value="KeyPressed" />
                                     <parameters>
                                         <parameter></parameter>
-                                        <parameter>Num5</parameter>
+                                        <parameter>Num7</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
@@ -2053,7 +2102,7 @@
                                             <type inverted="false" value="Collision" />
                                             <parameters>
                                                 <parameter>telefon2</parameter>
-                                                <parameter>telefon1</parameter>
+                                                <parameter>NowaGrupa</parameter>
                                                 <parameter></parameter>
                                                 <parameter></parameter>
                                             </parameters>
@@ -2064,18 +2113,18 @@
                                         <instruction>
                                             <type inverted="false" value="MettreY" />
                                             <parameters>
-                                                <parameter>telefon1</parameter>
+                                                <parameter>NowaGrupa</parameter>
                                                 <parameter>=</parameter>
-                                                <parameter>telefon1.Y()-sin(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                                <parameter>NowaGrupa.Y()-sin(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
                                             </parameters>
                                             <subInstructions />
                                         </instruction>
                                         <instruction>
                                             <type inverted="false" value="MettreX" />
                                             <parameters>
-                                                <parameter>telefon1</parameter>
+                                                <parameter>NowaGrupa</parameter>
                                                 <parameter>=</parameter>
-                                                <parameter>telefon1.X()-cos(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                                <parameter>NowaGrupa.X()-cos(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
                                             </parameters>
                                             <subInstructions />
                                         </instruction>
@@ -2091,7 +2140,7 @@
                                     <type inverted="false" value="KeyPressed" />
                                     <parameters>
                                         <parameter></parameter>
-                                        <parameter>Num6</parameter>
+                                        <parameter>Num8</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
@@ -2125,7 +2174,7 @@
                                     <type inverted="false" value="KeyPressed" />
                                     <parameters>
                                         <parameter></parameter>
-                                        <parameter>Num7</parameter>
+                                        <parameter>Num9</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
@@ -2150,7 +2199,7 @@
                                     <type inverted="false" value="KeyPressed" />
                                     <parameters>
                                         <parameter></parameter>
-                                        <parameter>Num8</parameter>
+                                        <parameter>Num0</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
@@ -2175,22 +2224,14 @@
                             <comment2></comment2>
                         </event>
                         <event disabled="false" folded="false">
-                            <type>BuiltinCommonInstructions::Standard</type>
+                            <type>BuiltinCommonInstructions::ForEach</type>
+                            <object>NowaWiazka</object>
                             <conditions />
                             <actions>
                                 <instruction>
                                     <type inverted="false" value="Opacity" />
                                     <parameters>
-                                        <parameter>wiazka2</parameter>
-                                        <parameter>=</parameter>
-                                        <parameter>255</parameter>
-                                    </parameters>
-                                    <subInstructions />
-                                </instruction>
-                                <instruction>
-                                    <type inverted="false" value="Opacity" />
-                                    <parameters>
-                                        <parameter>wiazka1</parameter>
+                                        <parameter>NowaWiazka</parameter>
                                         <parameter>=</parameter>
                                         <parameter>255</parameter>
                                     </parameters>
@@ -2201,7 +2242,7 @@
                         </event>
                         <event disabled="false" folded="false">
                             <type>BuiltinCommonInstructions::JsCode</type>
-                            <inlineCode>console.log(Math.abs(Math.abs(runtimeScene._instances.items.wiazka1[0].getAngle()%180) - Math.abs(runtimeScene._instances.items.wiazka2[0].getAngle()%180))%180)</inlineCode>
+                            <inlineCode>//console.log(Math.abs(Math.abs(runtimeScene._instances.items.wiazka1[0].getAngle()%180) - Math.abs(runtimeScene._instances.items.wiazka2[0].getAngle()%180))%180)</inlineCode>
                             <parameterObjects></parameterObjects>
                         </event>
                         <event disabled="false" folded="false">
@@ -2210,8 +2251,8 @@
                                 <instruction>
                                     <type inverted="false" value="CollisionNP" />
                                     <parameters>
-                                        <parameter>wiazka1</parameter>
-                                        <parameter>wiazka2</parameter>
+                                        <parameter>Wiazka</parameter>
+                                        <parameter>NowaWiazka</parameter>
                                         <parameter></parameter>
                                         <parameter></parameter>
                                     </parameters>
@@ -2233,7 +2274,7 @@
                                         <instruction>
                                             <type inverted="false" value="Egal" />
                                             <parameters>
-                                                <parameter>abs(abs(wiazka1.Angle()%180)-abs(wiazka2.Angle()%180))</parameter>
+                                                <parameter>abs(abs(Wiazka.Angle()%180)-abs(NowaWiazka.Angle()%180))</parameter>
                                                 <parameter>&lt;=</parameter>
                                                 <parameter>16</parameter>
                                             </parameters>
@@ -2255,7 +2296,7 @@
                                 <instruction>
                                     <type inverted="false" value="Opacity" />
                                     <parameters>
-                                        <parameter>wiazka1</parameter>
+                                        <parameter>Wiazka</parameter>
                                         <parameter>=</parameter>
                                         <parameter>128</parameter>
                                     </parameters>
@@ -2264,7 +2305,7 @@
                                 <instruction>
                                     <type inverted="false" value="Opacity" />
                                     <parameters>
-                                        <parameter>wiazka2</parameter>
+                                        <parameter>NowaWiazka</parameter>
                                         <parameter>=</parameter>
                                         <parameter>128</parameter>
                                     </parameters>
@@ -2294,7 +2335,7 @@
                                     </actions>
                                     <events />
                                 </event>
-                                <event disabled="false" folded="false">
+                                <event disabled="true" folded="false">
                                     <type>BuiltinCommonInstructions::Standard</type>
                                     <conditions>
                                         <instruction>
@@ -2340,7 +2381,7 @@
                                                     <type inverted="false" value="MettreAutour" />
                                                     <parameters>
                                                         <parameter>punkt1</parameter>
-                                                        <parameter>telefon1</parameter>
+                                                        <parameter>Wiazka</parameter>
                                                         <parameter>0</parameter>
                                                         <parameter>0</parameter>
                                                     </parameters>
@@ -2383,7 +2424,7 @@
                                                     <type inverted="false" value="MettreAutour" />
                                                     <parameters>
                                                         <parameter>punkt2</parameter>
-                                                        <parameter>telefon2</parameter>
+                                                        <parameter>NowaWiazka</parameter>
                                                         <parameter>0</parameter>
                                                         <parameter>0</parameter>
                                                     </parameters>
@@ -2399,30 +2440,111 @@
                         <event disabled="false" folded="false">
                             <type>BuiltinCommonInstructions::Comment</type>
                             <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
-                            <comment>Kolizja telefonu&#x0A;</comment>
+                            <comment>Telefon nie wychodzi poza ekran</comment>
                             <comment2></comment2>
                         </event>
-                        <event disabled="true" folded="false">
+                        <event disabled="false" folded="false">
                             <type>BuiltinCommonInstructions::Standard</type>
                             <conditions>
                                 <instruction>
-                                    <type inverted="false" value="CollisionNP" />
+                                    <type inverted="false" value="PosY" />
                                     <parameters>
-                                        <parameter>telefon1</parameter>
-                                        <parameter>telefon2</parameter>
-                                        <parameter></parameter>
-                                        <parameter></parameter>
+                                        <parameter>NowaGrupa</parameter>
+                                        <parameter>&lt;</parameter>
+                                        <parameter>0</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>NowaGrupa</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>0</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
                             <events />
                         </event>
                         <event disabled="false" folded="false">
                             <type>BuiltinCommonInstructions::Standard</type>
-                            <conditions />
-                            <actions />
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="PosX" />
+                                    <parameters>
+                                        <parameter>NowaGrupa</parameter>
+                                        <parameter>&lt;</parameter>
+                                        <parameter>0</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>NowaGrupa</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>0</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="PosX" />
+                                    <parameters>
+                                        <parameter>NowaGrupa</parameter>
+                                        <parameter>&gt;</parameter>
+                                        <parameter>2400</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>NowaGrupa</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>2400</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="PosY" />
+                                    <parameters>
+                                        <parameter>NowaGrupa</parameter>
+                                        <parameter>&gt;</parameter>
+                                        <parameter>1350</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>NowaGrupa</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>1350</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
                             <events />
                         </event>
                     </events>
