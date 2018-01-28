@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project firstLayout="">
     <gdVersion build="96" major="4" minor="0" revision="173" />
-    <properties folderProject="false" linuxExecutableFilename="" macExecutableFilename="" packageName="com.example.gamename" projectFile="/Volumes/El Karambola/biurko/poznan game jam/dzwonki.gdg" useExternalSourceFiles="false" winExecutableFilename="" winExecutableIconFile="">
+    <properties folderProject="false" linuxExecutableFilename="" macExecutableFilename="" packageName="com.example.gamename" projectFile="/home/dos/git/dzwonkownia/dzwonki.gdg" useExternalSourceFiles="false" winExecutableFilename="" winExecutableIconFile="">
         <name>Projekt</name>
         <author></author>
         <windowWidth>1920</windowWidth>
@@ -260,7 +260,7 @@
                                         <sprite hasCustomCollisionMask="true" image="wiazka.png">
                                             <points />
                                             <originPoint name="origine" x="500.000000" y="32.000000" />
-                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <centerPoint automatic="true" name="centre" x="500.000000" y="32.000000" />
                                             <customCollisionMask>
                                                 <polygon>
                                                     <vertice x="0.000000" y="0.000000" />
@@ -422,7 +422,7 @@
                                         <sprite hasCustomCollisionMask="true" image="wiazka.png">
                                             <points />
                                             <originPoint name="origine" x="500.000000" y="32.000000" />
-                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <centerPoint automatic="true" name="centre" x="500.000000" y="32.000000" />
                                             <customCollisionMask>
                                                 <polygon>
                                                     <vertice x="0.000000" y="0.000000" />
@@ -449,7 +449,7 @@
                                         <sprite hasCustomCollisionMask="true" image="wiazka.png">
                                             <points />
                                             <originPoint name="origine" x="500.000000" y="32.000000" />
-                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <centerPoint automatic="true" name="centre" x="500.000000" y="32.000000" />
                                             <customCollisionMask>
                                                 <polygon>
                                                     <vertice x="0.000000" y="0.000000" />
@@ -476,7 +476,7 @@
                                         <sprite hasCustomCollisionMask="true" image="wiazka.png">
                                             <points />
                                             <originPoint name="origine" x="500.000000" y="32.000000" />
-                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <centerPoint automatic="true" name="centre" x="500.000000" y="32.000000" />
                                             <customCollisionMask>
                                                 <polygon>
                                                     <vertice x="0.000000" y="0.000000" />
@@ -503,7 +503,7 @@
                                         <sprite hasCustomCollisionMask="true" image="wiazka.png">
                                             <points />
                                             <originPoint name="origine" x="500.000000" y="32.000000" />
-                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <centerPoint automatic="true" name="centre" x="500.000000" y="32.000000" />
                                             <customCollisionMask>
                                                 <polygon>
                                                     <vertice x="0.000000" y="0.000000" />
@@ -530,7 +530,7 @@
                                         <sprite hasCustomCollisionMask="true" image="wiazka.png">
                                             <points />
                                             <originPoint name="origine" x="500.000000" y="32.000000" />
-                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <centerPoint automatic="true" name="centre" x="500.000000" y="32.000000" />
                                             <customCollisionMask>
                                                 <polygon>
                                                     <vertice x="0.000000" y="0.000000" />
@@ -557,7 +557,7 @@
                                         <sprite hasCustomCollisionMask="true" image="wiazka.png">
                                             <points />
                                             <originPoint name="origine" x="500.000000" y="32.000000" />
-                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <centerPoint automatic="true" name="centre" x="500.000000" y="32.000000" />
                                             <customCollisionMask>
                                                 <polygon>
                                                     <vertice x="0.000000" y="0.000000" />
@@ -584,7 +584,7 @@
                                         <sprite hasCustomCollisionMask="true" image="wiazka.png">
                                             <points />
                                             <originPoint name="origine" x="500.000000" y="32.000000" />
-                                            <centerPoint automatic="true" name="centre" x="125.000000" y="10.000000" />
+                                            <centerPoint automatic="true" name="centre" x="500.000000" y="32.000000" />
                                             <customCollisionMask>
                                                 <polygon>
                                                     <vertice x="0.000000" y="0.000000" />
@@ -1646,7 +1646,7 @@
                                     <parameters>
                                         <parameter>wiazka3</parameter>
                                         <parameter>=</parameter>
-                                        <parameter>telefon3.Angle()</parameter>
+                                        <parameter>telefon3.Angle()+180</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
@@ -1714,7 +1714,7 @@
                                     <parameters>
                                         <parameter>wiazka5</parameter>
                                         <parameter>=</parameter>
-                                        <parameter>telefon5.Angle()</parameter>
+                                        <parameter>telefon5.Angle()+180</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
@@ -1782,7 +1782,7 @@
                                     <parameters>
                                         <parameter>wiazka7</parameter>
                                         <parameter>=</parameter>
-                                        <parameter>telefon7.Angle()</parameter>
+                                        <parameter>telefon7.Angle()+90</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
@@ -1816,7 +1816,7 @@
                                     <parameters>
                                         <parameter>wiazka8</parameter>
                                         <parameter>=</parameter>
-                                        <parameter>telefon8.Angle()</parameter>
+                                        <parameter>telefon8.Angle()+90</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
@@ -1884,7 +1884,44 @@
                                     <subInstructions />
                                 </instruction>
                             </actions>
-                            <events />
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon1</parameter>
+                                                <parameter>telefon2</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>telefon2</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>telefon2.Y()-sin(telefon1.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>telefon2</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>telefon2.X()-cos(telefon1.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
                         </event>
                         <event disabled="false" folded="false">
                             <type>BuiltinCommonInstructions::Standard</type>
@@ -1994,7 +2031,7 @@
                                     <parameters>
                                         <parameter>telefon2</parameter>
                                         <parameter>=</parameter>
-                                        <parameter>telefon2.X()+cos(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                        <parameter>telefon2.X()-cos(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
@@ -2003,12 +2040,49 @@
                                     <parameters>
                                         <parameter>telefon2</parameter>
                                         <parameter>=</parameter>
-                                        <parameter>telefon2.Y()+sin(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                        <parameter>telefon2.Y()-sin(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
                             </actions>
-                            <events />
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon2</parameter>
+                                                <parameter>telefon1</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>telefon1</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>telefon1.Y()-sin(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>telefon1</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>telefon1.X()-cos(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
                         </event>
                         <event disabled="false" folded="false">
                             <type>BuiltinCommonInstructions::Standard</type>
@@ -2028,7 +2102,7 @@
                                     <parameters>
                                         <parameter>telefon2</parameter>
                                         <parameter>=</parameter>
-                                        <parameter>telefon2.X()-cos(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                        <parameter>telefon2.X()+cos(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
@@ -2037,7 +2111,7 @@
                                     <parameters>
                                         <parameter>telefon2</parameter>
                                         <parameter>=</parameter>
-                                        <parameter>telefon2.Y()-sin(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                        <parameter>telefon2.Y()+sin(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
@@ -2110,6 +2184,15 @@
                                         <parameter>wiazka2</parameter>
                                         <parameter></parameter>
                                         <parameter></parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="Egal" />
+                                    <parameters>
+                                        <parameter>abs((wiazka1.Angle()%180)-(wiazka2.Angle()%180))</parameter>
+                                        <parameter>&lt;</parameter>
+                                        <parameter>10</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
