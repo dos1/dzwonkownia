@@ -50,6 +50,7 @@
             <resource alwaysLoaded="false" file="assets/tlo.png" kind="image" name="tlo.png" smoothed="true" userAdded="false" />
             <resource alwaysLoaded="false" file="assets/punkt.png" kind="image" name="punkt.png" smoothed="true" userAdded="false" />
             <resource alwaysLoaded="false" file="assets/punkt0.png" kind="image" name="punkt0.png" smoothed="true" userAdded="false" />
+            <resource file="assets/dzwonkownia-loop.ogg" kind="audio" name="dzwonkownia-loop.ogg" userAdded="true" />
         </resources>
         <resourceFolders />
     </resources>
@@ -1492,7 +1493,7 @@
                                             <type inverted="false" value="KeyPressed" />
                                             <parameters>
                                                 <parameter></parameter>
-                                                <parameter>b</parameter>
+                                                <parameter>Up</parameter>
                                             </parameters>
                                             <subInstructions />
                                         </instruction>
@@ -1500,7 +1501,7 @@
                                             <type inverted="false" value="KeyPressed" />
                                             <parameters>
                                                 <parameter></parameter>
-                                                <parameter>n</parameter>
+                                                <parameter>Down</parameter>
                                             </parameters>
                                             <subInstructions />
                                         </instruction>
@@ -1508,7 +1509,7 @@
                                             <type inverted="false" value="KeyPressed" />
                                             <parameters>
                                                 <parameter></parameter>
-                                                <parameter>m</parameter>
+                                                <parameter>Left</parameter>
                                             </parameters>
                                             <subInstructions />
                                         </instruction>
@@ -1516,7 +1517,7 @@
                                             <type inverted="false" value="KeyPressed" />
                                             <parameters>
                                                 <parameter></parameter>
-                                                <parameter>,</parameter>
+                                                <parameter>Right</parameter>
                                             </parameters>
                                             <subInstructions />
                                         </instruction>
@@ -1571,6 +1572,17 @@
                                         <parameter>gra</parameter>
                                         <parameter>=</parameter>
                                         <parameter>1</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="PlaySound" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>dzwonkownia-loop.ogg</parameter>
+                                        <parameter>yes</parameter>
+                                        <parameter></parameter>
+                                        <parameter></parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
@@ -2004,7 +2016,44 @@
                                     <subInstructions />
                                 </instruction>
                             </actions>
-                            <events />
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon1</parameter>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.Y()+sin(telefon1.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.X()+cos(telefon1.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
                         </event>
                         <event disabled="false" folded="false">
                             <type>BuiltinCommonInstructions::Standard</type>
@@ -2165,7 +2214,44 @@
                                     <subInstructions />
                                 </instruction>
                             </actions>
-                            <events />
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon2</parameter>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.Y()+sin(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.X()+cos(telefon2.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
                         </event>
                         <event disabled="false" folded="false">
                             <type>BuiltinCommonInstructions::Standard</type>
@@ -2211,6 +2297,1194 @@
                                         <parameter>telefon2</parameter>
                                         <parameter>=</parameter>
                                         <parameter>telefon2.Angle()+400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Comment</type>
+                            <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
+                            <comment>Poruszanie gracz 3&#x0A;</comment>
+                            <comment2></comment2>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>q</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon3</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon3.X()-cos(telefon3.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon3</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon3.Y()-sin(telefon3.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon3</parameter>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.Y()-sin(telefon3.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.X()-cos(telefon3.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>w</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon3</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon3.X()+cos(telefon3.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon3</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon3.Y()+sin(telefon3.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon3</parameter>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.Y()+sin(telefon3.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.X()+cos(telefon3.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>e</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon3</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon3.Angle()-400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>r</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon3</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon3.Angle()+400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Comment</type>
+                            <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
+                            <comment>Poruszanie gracz 4&#x0A;</comment>
+                            <comment2></comment2>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>u</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon4</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon4.X()-cos(telefon4.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon4</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon4.Y()-sin(telefon4.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon4</parameter>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.Y()-sin(telefon4.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.X()-cos(telefon4.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>i</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon4</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon4.X()+cos(telefon4.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon4</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon4.Y()+sin(telefon4.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon4</parameter>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.Y()+sin(telefon4.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.X()+cos(telefon4.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>o</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon4</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon4.Angle()-400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>p</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon4</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon4.Angle()+400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Comment</type>
+                            <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
+                            <comment>Poruszanie gracz 5&#x0A;</comment>
+                            <comment2></comment2>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>a</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon5</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon5.X()-cos(telefon5.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon5</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon5.Y()-sin(telefon5.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon5</parameter>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.Y()-sin(telefon5.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.X()-cos(telefon5.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>s</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon5</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon5.X()+cos(telefon5.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon5</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon5.Y()+sin(telefon5.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon5</parameter>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.Y()+sin(telefon5.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.X()+cos(telefon5.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>d</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon5</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon5.Angle()-400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>f</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon5</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon5.Angle()+400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Comment</type>
+                            <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
+                            <comment>Poruszanie gracz 6&#x0A;</comment>
+                            <comment2></comment2>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>h</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon6</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon6.X()-cos(telefon6.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon6</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon6.Y()-sin(telefon6.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon6</parameter>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.Y()-sin(telefon6.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.X()-cos(telefon6.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>j</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon6</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon6.X()+cos(telefon6.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon6</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon6.Y()+sin(telefon6.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon6</parameter>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.Y()+sin(telefon6.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.X()+cos(telefon6.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>k</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon6</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon6.Angle()-400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>l</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon6</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon6.Angle()+400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Comment</type>
+                            <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
+                            <comment>Poruszanie gracz 7&#x0A;</comment>
+                            <comment2></comment2>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>z</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon7</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon7.X()-cos(telefon7.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon7</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon7.Y()-sin(telefon7.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon7</parameter>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.Y()-sin(telefon7.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.X()-cos(telefon7.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>x</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon7</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon7.X()+cos(telefon7.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon7</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon7.Y()+sin(telefon7.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon7</parameter>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.Y()+sin(telefon7.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.X()+cos(telefon7.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>c</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon7</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon7.Angle()-400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>v</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon7</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon7.Angle()+400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Comment</type>
+                            <color b="140" g="124" r="15" textB="254" textG="254" textR="255" />
+                            <comment>Poruszanie gracz 8&#x0A;</comment>
+                            <comment2></comment2>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Up</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon8</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon8.X()-cos(telefon8.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon8</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon8.Y()-sin(telefon8.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon8</parameter>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.Y()-sin(telefon8.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.X()-cos(telefon8.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Down</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="MettreX" />
+                                    <parameters>
+                                        <parameter>telefon8</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon8.X()+cos(telefon8.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                                <instruction>
+                                    <type inverted="false" value="MettreY" />
+                                    <parameters>
+                                        <parameter>telefon8</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon8.Y()+sin(telefon8.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events>
+                                <event disabled="false" folded="false">
+                                    <type>BuiltinCommonInstructions::Standard</type>
+                                    <conditions>
+                                        <instruction>
+                                            <type inverted="false" value="Collision" />
+                                            <parameters>
+                                                <parameter>telefon8</parameter>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter></parameter>
+                                                <parameter></parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </conditions>
+                                    <actions>
+                                        <instruction>
+                                            <type inverted="false" value="MettreY" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.Y()+sin(telefon8.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                        <instruction>
+                                            <type inverted="false" value="MettreX" />
+                                            <parameters>
+                                                <parameter>NowaGrupa</parameter>
+                                                <parameter>=</parameter>
+                                                <parameter>NowaGrupa.X()+cos(telefon8.Angle()/180*3.1415)*400*TimeDelta()</parameter>
+                                            </parameters>
+                                            <subInstructions />
+                                        </instruction>
+                                    </actions>
+                                    <events />
+                                </event>
+                            </events>
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Left</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon8</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon8.Angle()-400*TimeDelta()</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </actions>
+                            <events />
+                        </event>
+                        <event disabled="false" folded="false">
+                            <type>BuiltinCommonInstructions::Standard</type>
+                            <conditions>
+                                <instruction>
+                                    <type inverted="false" value="KeyPressed" />
+                                    <parameters>
+                                        <parameter></parameter>
+                                        <parameter>Right</parameter>
+                                    </parameters>
+                                    <subInstructions />
+                                </instruction>
+                            </conditions>
+                            <actions>
+                                <instruction>
+                                    <type inverted="false" value="SetAngle" />
+                                    <parameters>
+                                        <parameter>telefon8</parameter>
+                                        <parameter>=</parameter>
+                                        <parameter>telefon8.Angle()+400*TimeDelta()</parameter>
                                     </parameters>
                                     <subInstructions />
                                 </instruction>
